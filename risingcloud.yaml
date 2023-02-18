@@ -1,0 +1,20 @@
+name: matrix-multiplication
+url: matrix-multiplication
+team: 63f0ad5d1ef7ac586e542e37
+mode: risingcloud
+workspace: Sandbox
+from: ubuntu:22.04
+build: []
+deps: 
+- apt-get update
+- apt-get -y upgrade
+- apt-get -y install python3
+- apt-get -y install python3-pip
+- pip install numpy
+daemons: []
+run: python3 app.py
+timeout: 300000
+env: {}
+minWorkers: 0
+maxWorkers: 8
+maxStorage: 4000
